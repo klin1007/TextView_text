@@ -51,28 +51,28 @@ public class MainActivity extends Activity {
             }
         });
 
-//        bt2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startNextPage();
-//            }
-//        });
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startNextPage();
+            }
+        });
     }
 
-//    private void startNextPage() {
-//        //初始化Intent物件
-//        Intent intent = new Intent();
-//        //傳送資料至第二頁
-///*        intent.putExtra("Name","Tom");
-//        intent.putExtra("Year",12);*/
-//        Bundle bundle = new Bundle();
-//        bundle.putString("Name", "Tom");
-//        bundle.putInt("Year", 12);
-//        intent.putExtra("Bundle", bundle);
-//        //從MainActivity 到Main2Activity
-//        intent.setClass(MainActivity.this, );
-//        //開啟Activity
-//        startActivity(intent);
+    private void startNextPage() {
+        //初始化Intent物件
+        Intent intent = new Intent();
+        //傳送資料至第二頁
+/*        intent.putExtra("Name","Tom");
+        intent.putExtra("Year",12);*/
+        Bundle bundle = new Bundle();
+        bundle.putString("Name", "Tom");
+        bundle.putInt("Year", 12);
+        intent.putExtra("Bundle", bundle);
+        //從MainActivity 到Main2Activity
+        intent.setClass(MainActivity.this, activity_login2);
+        //開啟Activity
+        startActivity(intent);
     }
 
 }
